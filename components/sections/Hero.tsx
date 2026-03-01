@@ -12,24 +12,33 @@ export function Hero() {
             </div>
 
             <div className="pointer-events-none absolute inset-x-0 left-4 right-4 bottom-0 sm:bottom-[-20px] md:left-10 md:right-10 md:bottom-[-90px] z-0 flex justify-center">
-                <Image
-                    src={withBasePath("/images/hero.webp")}
-                    alt="Hero illustration"
-                    width={1605}
-                    height={619}
-                    priority
-                    className="select-none max-w-[1605px] w-full"
-                />
+                <picture className="w-full max-w-[1605px]">
+                    <source
+                        media="(max-width: 640px)"
+                        srcSet={withBasePath("/images/hero-mobile.webp")}
+                    />
+                    <img
+                        src={withBasePath("/images/hero.webp")}
+                        alt="Hero illustration"
+                        width={1605}
+                        height={619}
+                        className="w-full select-none"
+                        loading="eager"
+                        fetchPriority="high"
+                    />
+                </picture>
             </div>
 
             <Container className="relative z-10 text-center">
                 <div className="pt-[120px] md:pt-[260px]">
                     <h1 className="font-montserrat font-medium tracking-[0.02em]">
-            <span className="block bg-gradient-to-r from-[#FF3BFF] via-[#ECBFBF] to-[#5C24FF] bg-clip-text text-transparent text-[34px] leading-[44px] sm:text-[42px] sm:leading-[52px] md:text-[80px] md:leading-[98px]">
+            <span
+                className="block bg-gradient-to-r from-[#FF3BFF] via-[#ECBFBF] to-[#5C24FF] bg-clip-text text-transparent text-[34px] leading-[44px] sm:text-[42px] sm:leading-[52px] md:text-[80px] md:leading-[98px]">
               THE BEST WEBSITE EVER
             </span>
 
-            <span className="block text-white text-[34px] leading-[44px] sm:text-[42px] sm:leading-[52px] md:text-[80px] md:leading-[98px]">
+                        <span
+                            className="block text-white text-[34px] leading-[44px] sm:text-[42px] sm:leading-[52px] md:text-[80px] md:leading-[98px]">
               Scalable.
             </span>
                     </h1>
