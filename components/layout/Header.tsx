@@ -145,16 +145,16 @@ export function Header() {
 
                                 <div className="mt-6 flex items-center gap-4">
                                     <a href="#" aria-label="GitHub" className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 hover:bg-white/10 transition">
-                                        <Image src="/icons/github.svg" alt="GitHub" width={18} height={18} />
+                                        <Image src={withBasePath("/icons/github.svg")} alt="GitHub" width={18} height={18} />
                                     </a>
                                     <a href="#" aria-label="Discord" className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 hover:bg-white/10 transition">
-                                        <Image src="/icons/discord.svg" alt="Discord" width={18} height={18} />
+                                        <Image src={withBasePath("/icons/discord.svg")} alt="Discord" width={18} height={18} />
                                     </a>
                                     <a href="#" aria-label="Reddit" className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 hover:bg-white/10 transition">
-                                        <Image src="/icons/reddit.svg" alt="Reddit" width={18} height={18} />
+                                        <Image src={withBasePath("/icons/reddit.svg")} alt="Reddit" width={18} height={18} />
                                     </a>
                                     <a href="#" aria-label="Twitter" className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 hover:bg-white/10 transition">
-                                        <Image src="/icons/twitter.svg" alt="Twitter" width={18} height={18} />
+                                        <Image src={withBasePath("/icons/twitter.svg")} alt="Twitter" width={18} height={18} />
                                     </a>
                                 </div>
                             </div>
