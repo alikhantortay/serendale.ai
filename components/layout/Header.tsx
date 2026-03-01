@@ -6,6 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect } from "react";
 import { useUIStore } from "@/store/ui-store";
 import { Container } from "@/components/layout/Container";
+import {withBasePath} from "@/lib/asset";
 
 const nav = [
     { label: "Smart Contracts", href: "#smart-contracts" },
@@ -57,16 +58,16 @@ export function Header() {
 
                     <div className="ml-auto flex items-center gap-4 md:gap-5 md:pt-[6px]">
                         <a href="#" aria-label="GitHub">
-                            <Image src="/icons/github.svg" alt="GitHub" width={20} height={20} />
+                            <Image src={withBasePath("/icons/github.svg")} alt="GitHub" width={20} height={20} />
                         </a>
                         <a href="#" aria-label="Discord">
-                            <Image src="/icons/discord.svg" alt="Discord" width={20} height={20} />
+                            <Image src={withBasePath("/icons/discord.svg")} alt="Discord" width={20} height={20} />
                         </a>
                         <a href="#" aria-label="Reddit" className="hidden sm:inline-flex">
-                            <Image src="/icons/reddit.svg" alt="Reddit" width={20} height={20} />
+                            <Image src={withBasePath("/icons/reddit.svg")} alt="Reddit" width={20} height={20} />
                         </a>
                         <a href="#" aria-label="Twitter" className="hidden sm:inline-flex">
-                            <Image src="/icons/twitter.svg" alt="Twitter" width={20} height={20} />
+                            <Image src={withBasePath("/icons/twitter.svg")} alt="Twitter" width={20} height={20} />
                         </a>
 
                         <button

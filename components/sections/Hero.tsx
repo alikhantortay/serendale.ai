@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Container } from "@/components/layout/Container";
+import {withBasePath} from "@/lib/asset";
 
 export function Hero() {
     return (
@@ -12,7 +13,7 @@ export function Hero() {
 
             <div className="pointer-events-none absolute inset-x-0 left-4 right-4 bottom-0 sm:bottom-[-20px] md:left-10 md:right-10 md:bottom-[-90px] z-0 flex justify-center">
                 <Image
-                    src="/images/hero.webp"
+                    src={withBasePath("/images/hero.webp")}
                     alt="Hero illustration"
                     width={1605}
                     height={619}
