@@ -2,7 +2,7 @@ export const defaultSEO = {
     title: "Serendale",
     description:
         "High-performance AI platform with scalable infrastructure and enterprise-grade security.",
-    url: "https://example.com",
+    url: "https://alikhantortay.github.io/serendale.ai/",
     image: "/og-image.jpg",
 };
 
